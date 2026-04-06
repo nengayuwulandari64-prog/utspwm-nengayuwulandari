@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Neng Ayu wulandaria - Minimalist Pink Nude</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-color: #fdf8f7;      /* Pink Nude Sangat Muda (Off-White Pink) */
+      --accent-rose: #d4a3a3;    /* Dusty Rose (Aksen Utama) */
+      --deep-mauve: #5a4444;     /* Mauve Tua (Untuk Teks agar Profesional) */
+      --soft-blush: #f2e1df;     /* Blush Pink Soft (Untuk Ornamen) */
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      background-color: var(--bg-color);
+      color: var(--deep-mauve);
+    }
+
+    h1, h2, .brand {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    header {
+      background: rgba(253, 248, 247, 0.8) !important;
+      border-bottom: 1px solid rgba(212, 163, 163, 0.15);
+    }
+
+    /* Animasi Konten */
+    #content {
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(0.99);
+    }
+    
+    #content.fade-in {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Tab Aktif Desktop - Garis Bawah Rose */
+    .nav-item.nav-active {
+      color: var(--accent-rose);
+    }
+    .nav-item.nav-active::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 20%;
+      width: 60%;
+      height: 3px;
+      background: var(--accent-rose);
+      border-radius: 10px;
+    }
+
+    /* Tab Aktif Mobile - Floating Pill Rose */
+    .mobile-nav-active {
+      color: #fff !important;
+    }
+    .mobile-nav-active span {
+      background-color: var(--accent-rose);
+      border-radius: 20px;
+      padding: 6px 14px;
+      box-shadow: 0 4px 15px rgba(212, 163, 163, 0.4);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg-color); }
+    ::-webkit-scrollbar-thumb { background: var(--soft-blush); border-radius: 10px; }
+    
+    @keyframes pulse-soft-pink {
+      0%, 100% { transform: scale(1); opacity: 0.6; }
+      50% { transform: scale(1.1); opacity: 0.3; }
+    }
+    .animate-pulse-pink { 
+      animation: pulse-soft-pink 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="leading-relaxed pb-24 md:pb-0">
+
+  <header class="hidden md:block sticky top-0 z-50 backdrop-blur-md">
+    <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="brand text-2xl font-bold italic tracking-tighter text-[#7d5a5a]">Neng Ayu wulandari.</div>
+      <nav>
+        <ul class="flex space-x-8 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#b4a1a1]">
+          <li data-page="home.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Home</li>
+          <li data-page="about.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">About</li>
+          <li data-page="skills.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Skills</li>
+          <li data-page="experience.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Exp</li>
+          <li data-page="education.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Edu</li>
+          <li data-page="certifikate.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Cer</li>
+          <li data-page="github.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Work</li>
+          <li data-page="contact.html" class="nav-item relative cursor-pointer hover:text-[#d4a3a3] transition-all">Mail</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="md:hidden flex justify-center py-6">
+    <div class="brand text-3xl font-bold italic text-[#7d5a5a]">Neng Ayu wulandari.</div>
+  </div>
+
+  <main class="container mx-auto px-4 md:px-6 relative">
+    <div class="fixed top-[-10%] right-[-5%] w-[450px] h-[450px] bg-[#f2e1df]/40 rounded-full blur-[110px] -z-10 animate-pulse-pink"></div>
+    <div class="fixed bottom-[5%] left-[-10%] w-[350px] h-[350px] bg-[#d4a3a3]/10 rounded-full blur-[90px] -z-10"></div>
+
+    <div id="content" class="min-h-[75vh] py-6">
+      </div>
+  </main>
+
+  <nav class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[94%] max-w-sm bg-[#5a4444]/95 backdrop-blur-lg border border-white/10 shadow-2xl rounded-[2.2rem] px-1 py-4 z-50">
+    <ul class="flex justify-around items-center text-[9px] font-bold uppercase tracking-tight text-[#b4a1a1]">
+      <li data-page="home.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Home</span>
+      </li>
+      <li data-page="about.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">About</span>
+      </li>
+      <li data-page="skills.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Skill</span>
+      </li>
+      <li data-page="experience.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Exp</span>
+      </li>
+      <li data-page="education.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Edu</span>
+      </li>
+      <li data-page="certifikate.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Cer</span>
+      </li>
+      <li data-page="github.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Work</span>
+      </li>
+      <li data-page="contact.html" class="nav-item flex flex-col items-center">
+        <span class="px-3 py-1">Mail</span>
+      </li>
+    </ul>
+  </nav>
+
+  <footer class="hidden md:block text-center py-12 border-t border-[#d4a3a3]/10 mt-20">
+    <p class="text-[#d4a3a3]/60 text-[10px] tracking-[0.6em] font-light uppercase">
+      &copy; 2026 • Neng Ayu wulandari AZZAHRA • PORTFOLIO
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

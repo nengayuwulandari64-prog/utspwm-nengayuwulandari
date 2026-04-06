@@ -1,0 +1,52 @@
+<div class="max-w-xl mx-auto py-10 px-4">
+  
+  <div class="mb-10 flex items-center gap-4 px-2">
+    <h2 class="brand text-3xl md:text-4xl text-[#5a4444] italic">Sapa Neng Ayu Wulandari 👋</h2>
+    <div class="h-[1px] flex-grow bg-[#d4a3a3]/20"></div>
+  </div>
+
+  <div class="bg-white/70 backdrop-blur-md rounded-[2.5rem] shadow-sm border border-[#d4a3a3]/20 p-8 md:p-10 relative overflow-hidden group">
+    
+    <div class="absolute top-[-20px] right-[-20px] w-20 h-20 bg-[#f2e1df]/40 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700"></div>
+
+    <form id="contactForm" class="space-y-6 relative z-10">
+      
+      <div>
+        <label for="name" class="block text-[10px] font-black text-[#d4a3a3] uppercase tracking-widest mb-2 ml-4 text-left">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Siapa nama kamu?" 
+               class="w-full px-6 py-4 bg-[#fdf8f7] border border-[#d4a3a3]/10 rounded-[1.8rem] focus:outline-none focus:ring-2 focus:ring-[#d4a3a3]/30 focus:bg-white focus:border-[#d4a3a3]/30 transition-all duration-300 text-[#5a4444] placeholder:text-[#b4a1a1]">
+        <small class="error-msg hidden mt-2 ml-4 text-[10px] font-bold text-rose-400 uppercase italic"></small>
+      </div>
+
+      <div>
+        <label for="email" class="block text-[10px] font-black text-[#d4a3a3] uppercase tracking-widest mb-2 ml-4 text-left">Alamat Email</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" 
+               class="w-full px-6 py-4 bg-[#fdf8f7] border border-[#d4a3a3]/10 rounded-[1.8rem] focus:outline-none focus:ring-2 focus:ring-[#d4a3a3]/30 focus:bg-white focus:border-[#d4a3a3]/30 transition-all duration-300 text-[#5a4444] placeholder:text-[#b4a1a1]">
+        <small class="error-msg hidden mt-2 ml-4 text-[10px] font-bold text-rose-400 uppercase italic"></small>
+      </div>
+
+      <div>
+        <label for="message" class="block text-[10px] font-black text-[#d4a3a3] uppercase tracking-widest mb-2 ml-4 text-left">Pesan</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tulis sesuatu yang manis..." 
+                  class="w-full px-6 py-4 bg-[#fdf8f7] border border-[#d4a3a3]/10 rounded-[1.8rem] focus:outline-none focus:ring-2 focus:ring-[#d4a3a3]/30 focus:bg-white focus:border-[#d4a3a3]/30 transition-all duration-300 text-[#5a4444] placeholder:text-[#b4a1a1] resize-none"></textarea>
+        <small class="error-msg hidden mt-2 ml-4 text-[10px] font-bold text-rose-400 uppercase italic"></small>
+      </div>
+
+      <button type="submit" id="btnKirim"
+              class="w-full py-4 bg-[#5a4444] text-white text-[10px] font-black uppercase tracking-[0.3em] rounded-[1.8rem] shadow-lg shadow-[#d4a3a3]/20 hover:bg-[#7d5a5a] hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2">
+        Kirim Pesan ✨
+      </button>
+    </form>
+
+    <div id="successMsg" class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm z-20 flex flex-col items-center justify-center p-8 text-center animate-fade-in">
+      <div class="w-20 h-20 bg-[#fdf8f7] text-[#d4a3a3] rounded-full flex items-center justify-center text-4xl mb-4 animate-bounce border border-[#f2e1df]">
+        💌
+      </div>
+      <h3 class="brand text-2xl text-[#5a4444] italic mb-2">Terima Kasih!</h3>
+      <p class="text-[#7d5a5a] text-xs leading-relaxed">Pesanmu sudah Neng Ayu Wulandari terima.<br>Ditunggu ya balasannya!</p>
+      
+      <button type="button" id="btnKirimLagi" class="mt-6 text-[10px] font-black text-[#d4a3a3] uppercase border-b border-[#f2e1df] hover:text-[#5a4444] hover:border-[#d4a3a3] transition-colors pt-2">Kirim pesan lain</button>
+    </div>
+
+  </div>
+</div>
